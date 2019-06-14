@@ -2,7 +2,6 @@ var randomNumberarray = ["19", "20", "21", "22", "23", "24", "25", "26", "27", "
 var crystalNumberarray = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"];
 var randomNumber = randomNumberarray[Math.floor(Math.random() * randomNumberarray.length)];
 var crystalNumber = crystalNumberarray[Math.floor(Math.random() * crystalNumberarray.length)];
-console.log(randomNumber, "random number");
 var totalNumber = 0
 var Wins = 0
 var Losses = 0
@@ -16,36 +15,27 @@ var crystalNumberElement1 = $("#crystal1")
 var crystalNumberElement2 = $("#crystal2")
 var crystalNumberElement3 = $("#crystal3")
 var crystalNumberElement4 = $("#crystal4")
-console.log(crystalNumberElement1)
 
 crystalNumberElement1.attr("points", crystalNumberarray[Math.floor(Math.random() * crystalNumberarray.length)]);
 crystalNumberElement2.attr("points", crystalNumberarray[Math.floor(Math.random() * crystalNumberarray.length)]);
 crystalNumberElement3.attr("points", crystalNumberarray[Math.floor(Math.random() * crystalNumberarray.length)]);
 crystalNumberElement4.attr("points", crystalNumberarray[Math.floor(Math.random() * crystalNumberarray.length)]);
 
-$(".crystal").on("click", function() {
-    console.log(randomNumberElement);
-    console.log(this)
+$(".crystal").on("click", function () {
     var points = $(this).attr("points")
     totalNumber = parseInt(totalNumber) + parseInt(points)
-    console.log(points)
-    console.log(totalNumber)
     if (totalNumber === parseInt(randomNumber)) {
         Wins++;
         totalNumber = 0;
         randomNumber = randomNumberarray[Math.floor(Math.random() * randomNumberarray.length)];
         winsElement.text("Wins: " + Wins);
     }
-    if (totalNumber>parseInt(randomNumber)) {
-        Losses++; 
+    if (totalNumber > parseInt(randomNumber)) {
+        Losses++;
         totalNumber = 0;
         randomNumber = randomNumberarray[Math.floor(Math.random() * randomNumberarray.length)];
         lossesElement.text("Losses: " + Losses);
     }
     totalNumberElement.text(totalNumber);
     randomNumberElement.text("Random number: " + randomNumber);
-
-
-    
-    
 });
