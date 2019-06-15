@@ -29,12 +29,20 @@ $(".crystal").on("click", function () {
         totalNumber = 0;
         randomNumber = randomNumberarray[Math.floor(Math.random() * randomNumberarray.length)];
         winsElement.text("Wins: " + Wins);
+        crystalNumberElement1.attr("points", crystalNumberarray[Math.floor(Math.random() * crystalNumberarray.length)]);
+        crystalNumberElement2.attr("points", crystalNumberarray[Math.floor(Math.random() * crystalNumberarray.length)]);
+        crystalNumberElement3.attr("points", crystalNumberarray[Math.floor(Math.random() * crystalNumberarray.length)]);
+        crystalNumberElement4.attr("points", crystalNumberarray[Math.floor(Math.random() * crystalNumberarray.length)]);
     }
     if (totalNumber > parseInt(randomNumber)) {
         Losses++;
         totalNumber = 0;
         randomNumber = randomNumberarray[Math.floor(Math.random() * randomNumberarray.length)];
         lossesElement.text("Losses: " + Losses);
+        crystalNumberElement1.attr("points", crystalNumberarray[Math.floor(Math.random() * crystalNumberarray.length)]);
+        crystalNumberElement2.attr("points", crystalNumberarray[Math.floor(Math.random() * crystalNumberarray.length)]);
+        crystalNumberElement3.attr("points", crystalNumberarray[Math.floor(Math.random() * crystalNumberarray.length)]);
+        crystalNumberElement4.attr("points", crystalNumberarray[Math.floor(Math.random() * crystalNumberarray.length)]);
     }
     totalNumberElement.text(totalNumber);
     randomNumberElement.text("Random number: " + randomNumber);
