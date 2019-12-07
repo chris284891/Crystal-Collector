@@ -1,5 +1,5 @@
 # Link
-https://chris284891.github.io/Crystal-Collector/
+https://swedishkinda.github.io/Crystal-Collector/
 
 # Crystal Collector
 This is a memory and math game.
