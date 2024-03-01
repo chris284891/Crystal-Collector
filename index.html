@@ -27,14 +27,14 @@
   <body>
     <div>
       <div>
-        <div class="row">
-          <div class="col-sm-12">
-            <h1 class="text-center mb-5">Crystal Collector</h1>
+        <div class="row center-xs">
+          <div class="col-sm-4">
+            <h1 class="text-center mb-5 contrast-box rounded p-4">Crystal Collector</h1>
           </div>
         </div>
 
-        <div class="row middle-xs">
-          <div class="col-lg-6">
+        <div class="row middle-xs center-xs text-left">
+          <div class="col-lg-5 contrast-box p-4 m-3 rounded">
             <p>
               You will be given a random number at the start of the game. There
               are four crystals below. By clicking on a crystal you will add a
@@ -46,23 +46,14 @@
               number. The value of each crystal is hidden from you until you
               click on it.
             </p>
-            <p>
+            <p class="mb-0">
               Each time the game starts, the values of each crystal will change.
             </p>
-            <p>
-              <strong>CLICK ANY CRYSTAL TO START</strong>
-            </p>
-            <div class="row">
-              <div class="col-sm-6">
-                <div id="randomnumber">Random number: 0</div>
-              </div>
-              <div class="col-sm-6">
-                <div id="wins">Wins: 0</div>
-                <div id="losses">Losses: 0</div>
-              </div>
-            </div>
           </div>
-          <div class="col-lg-6">
+          <div class="col-lg-5 contrast-box rounded m-3 p-4">
+            <h3 class="text-center mb-4">
+              <strong>CLICK ANY CRYSTAL TO START</strong>
+            </h3>
             <div class="row">
               <div class="col-sm-3">
                 <button
@@ -70,7 +61,7 @@
                   class="crystal"
                   points="1"
                 >
-                  <img src="assets/images/crystal1.png" alt="Crystal #1" />
+                  <img src="assets/images/crystal1.png" alt="Crystal number 1" style="max-width: 100px;" />
                 </button>
               </div>
               <div class="col-sm-3">
@@ -79,7 +70,7 @@
                   class="crystal"
                   points="2"
                 >
-                  <img src="assets/images/crystal2.png" alt="Crystal #2" />
+                  <img src="assets/images/crystal2.png" alt="Crystal number 2" style="max-width: 100px;" />
                 </button>
               </div>
               <div class="col-sm-3">
@@ -88,7 +79,7 @@
                   class="crystal"
                   points="3"
                 >
-                  <img src="assets/images/crystal3.png" alt="Crystal #3" />
+                  <img src="assets/images/crystal3.png" alt="Crystal number 3" style="max-width: 100px;" />
                 </button>
               </div>
               <div class="col-sm-3">
@@ -97,7 +88,7 @@
                   class="crystal"
                   points="4"
                 >
-                  <img src="assets/images/crystal4.png" alt="Crystal #4" />
+                  <img src="assets/images/crystal4.png" alt="Crystal number 4" style="max-width: 100px;" />
                 </button>
               </div>
               <div class="row">
@@ -109,6 +100,15 @@
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+        <div class="row center-xs mt-5 p-4 contrast-box rounded text-left mx-auto" style="max-width: 500px;">
+          <div class="col-sm-6">
+            <div id="randomnumber">Random number: 0</div>
+          </div>
+          <div class="col-sm-6">
+            <div id="wins">Wins: 0</div>
+            <div id="losses">Losses: 0</div>
           </div>
         </div>
       </div>
