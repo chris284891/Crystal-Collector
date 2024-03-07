@@ -21,6 +21,8 @@ crystalNumberElement2.attr("points", crystalNumberarray[Math.floor(Math.random()
 crystalNumberElement3.attr("points", crystalNumberarray[Math.floor(Math.random() * crystalNumberarray.length)]);
 crystalNumberElement4.attr("points", crystalNumberarray[Math.floor(Math.random() * crystalNumberarray.length)]);
 
+randomNumberElement.text(randomNumber);
+
 $(".crystal").on("click", function () {
     var points = $(this).attr("points")
     totalNumber = parseInt(totalNumber) + parseInt(points)
@@ -45,5 +47,5 @@ $(".crystal").on("click", function () {
         crystalNumberElement4.attr("points", crystalNumberarray[Math.floor(Math.random() * crystalNumberarray.length)]);
     }
     totalNumberElement.text(totalNumber);
-    randomNumberElement.text("Random number: " + randomNumber);
+    randomNumberElement.text(randomNumber);
 });

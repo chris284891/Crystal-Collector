@@ -15,3 +15,7 @@ body {
 .contrast-box {
     background: rgba(0, 0, 0, 0.7);
 }
+
+#totalscore, #randomnumber, #wins, #losses {
+    font-size: 4em;
+}
